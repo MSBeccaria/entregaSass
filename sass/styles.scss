@@ -1,0 +1,27 @@
+body{
+  .gridConteinerIndex{
+    display:grid;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
+    grid-template-rows: 200px 1000px 50px;
+    gap: 5px;  
+    align-items: center;
+}
+header{
+    nav{
+        .bg-color-propio{
+            background-color:white;
+        }
+        .nav-item a{
+            font-size:xx-large;
+            color:black;
+        }
+        .navbar-nav .nav-item a:hover{
+            color:#2C8AA0;
+            font-weight: bold;
+        
+        }
+    }
+}
+}

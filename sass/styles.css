@@ -1,0 +1,26 @@
+body .gridConteinerIndex {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: 200px 1000px 50px;
+      grid-template-rows: 200px 1000px 50px;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .bg-color-propio {
+  background-color: white;
+}
+
+body header nav .nav-item a {
+  font-size: xx-large;
+  color: black;
+}
+
+body header nav .navbar-nav .nav-item a:hover {
+  color: #2C8AA0;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */
