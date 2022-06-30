@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
 body{
   .gridConteinerIndex{
     display:grid;
@@ -7,8 +15,8 @@ body{
     grid-template-rows: 200px 1000px 50px;
     gap: 5px;  
     align-items: center;
-}
-header{
+  }
+   header{
     nav{
         .bg-color-propio{
             background-color:white;
@@ -20,8 +28,47 @@ header{
         .navbar-nav .nav-item a:hover{
             color:#2C8AA0;
             font-weight: bold;
-        
         }
     }
+  }
+
+
+.MainInicio{
+    p{
+    min-height: 200px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 5px;
+    font-size: 70px;
+    color:black;
+    font-weight: bold;
+    animation-name: aparecer;
+    animation-duration: 7s;
+    animation-iteration-count:infinite
+   }
+ @keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+ }
+
+ #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#CE5C16;
+    height: 80px;
+    margin-top: 10px;
+   }
+
+   a {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
 }
-}
+
