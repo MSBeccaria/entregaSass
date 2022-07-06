@@ -299,12 +299,12 @@ body #mainAgenda .btn {
         grid-template-areas: "header" "main" "footer";
     -ms-grid-rows: 200px 1300px 50px;
         grid-template-rows: 200px 1300px 50px;
-    gap: 5px;
+    row-gap: 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .gridConteinerAgenda #mainAgenda .mainAgenda__cartelera {
+  .gridConteinerAgenda .mainAgenda__cartelera {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -328,6 +328,7 @@ body #mainAgenda .btn {
   }
   .gridConteinerAgenda .carteleraItem {
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 

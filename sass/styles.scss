@@ -239,7 +239,6 @@ body{
 }
 
 /*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/
-
 @media(max-width:768px){
 
     .gridConteinerAgenda{
@@ -248,26 +247,26 @@ body{
                               "main"
                               "footer";
         grid-template-rows: 200px 1300px 50px;
-        gap: 5px;  
+        row-gap: 5px;  
         align-items: center; 
-    
-    #mainAgenda .mainAgenda__cartelera{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 0;
-        }
-        .carteleraItem{
-            width: 100%;
-        }
+  
+    .mainAgenda__cartelera{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
     }
-} 
-
+     .carteleraItem{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+  }
+}
 /* HASTA ACA AGENDA*/
 
 /*CONTACTO*/
