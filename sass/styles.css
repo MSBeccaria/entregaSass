@@ -297,8 +297,8 @@ body #mainAgenda .btn {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "header" "main" "footer";
-    -ms-grid-rows: 200px 1300px 50px;
-        grid-template-rows: 200px 1300px 50px;
+    -ms-grid-rows: 200px 2000px 50px;
+        grid-template-rows: 200px 2000px 50px;
     row-gap: 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
