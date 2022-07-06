@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +87,7 @@ body #footer {
   background-color: #CE5C16;
   height: 80px;
   margin-top: 10px;
+  width: 100%;
 }
 
 body a {
@@ -93,6 +95,7 @@ body a {
   margin-right: 10px;
 }
 
+/* APLICO MEDIAQUERIE EN INDEX PARA VISTA MOBILE*/
 @media (max-width: 768px) {
   .MainInicio p {
     min-height: 100px;
@@ -114,6 +117,91 @@ body a {
     font-size: 5vh;
     color: black;
     font-weight: bold;
+  }
+}
+
+/* HASTA ACÁ INDEX*/
+/*PAGINA NOSOTRAS*/
+body .gridConteinerNosotras {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: 200px 1080px 50px;
+      grid-template-rows: 200px 1080px 50px;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .bg-color-propio {
+  background-color: white;
+}
+
+body header nav .nav-item a {
+  font-size: xx-large;
+  color: black;
+}
+
+body header nav .navbar-nav .nav-item a:hover {
+  color: #2C8AA0;
+  font-weight: bold;
+}
+
+body #mainNosotras {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-column-gap: 6px;
+  grid-row-gap: 10px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+body .mainNosotras__foto1,
+body .mainNosotras__foto2 {
+  width: 500px;
+}
+
+body .mainNosotras__foto1,
+body .mainNosotras__foto2:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* APLICO MEDIAQUERIE EN SOBRE NOSOTRAS PARA VISTA MOBILE*/
+@media (max-width: 768px) {
+  .gridConteinerNosotras {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "main" "footer";
+    -ms-grid-rows: 200px 1200px 50px;
+        grid-template-rows: 200px 1200px 50px;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gridConteinerNosotras #mainNosotras {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gridConteinerNosotras .mainNosotras__foto1,
+  .gridConteinerNosotras .mainNosotras__foto2 {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

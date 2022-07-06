@@ -64,6 +64,7 @@ body{
     background-color:#CE5C16;
     height: 80px;
     margin-top: 10px;
+    width: 100%;
    }
 
    a {
@@ -71,7 +72,7 @@ body{
     margin-right: 10px;
     }
 }
-
+/* APLICO MEDIAQUERIE EN INDEX PARA VISTA MOBILE*/
 @media(max-width:768px){
     .MainInicio{
         p{
@@ -87,4 +88,76 @@ body{
     }
     }
 }
+/* HASTA ACÁ INDEX*/
+/*PAGINA NOSOTRAS*/
+
+body{
+ .gridConteinerNosotras{
+    display:grid;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
+    grid-template-rows: 200px 1080px 50px;
+    gap: 5px;  
+    align-items: center; 
+  }
+ header{
+    nav{
+        .bg-color-propio{
+            background-color:white;
+        }
+        .nav-item a{
+            font-size:xx-large;
+            color:black;
+        }
+        .navbar-nav .nav-item a:hover{
+            color:#2C8AA0;
+            font-weight: bold;
+        }
+    }
+  }
+  #mainNosotras{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 6px;
+    grid-row-gap: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .mainNosotras__foto1,
+  .mainNosotras__foto2{
+    width:500px;
+  }
+  .mainNosotras__foto1,
+  .mainNosotras__foto2:hover{
+    filter: grayscale(100%);
+ }
+}
+
+/* APLICO MEDIAQUERIE EN SOBRE NOSOTRAS PARA VISTA MOBILE*/
+
+@media(max-width:768px){
+    .gridConteinerNosotras{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 1200px 50px;
+        gap: 5px;  
+        align-items: center; 
+        #mainNosotras{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    
+        .mainNosotras__foto1,
+        .mainNosotras__foto2{
+             width:60%;
+    }
+  } 
+
+}    
 
