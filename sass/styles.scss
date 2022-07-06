@@ -266,4 +266,63 @@ body{
             width: 100%;
         }
     }
-}  
+} 
+
+/* HASTA ACA AGENDA*/
+
+/*CONTACTO*/
+body{
+    .gridConteinerContacto{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 700px 50px;
+        gap: 5px;  
+        align-items: center; 
+    }
+    #mainContact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding-left: 90px;
+        padding-right: 90px;
+        gap:60px;
+        margin-bottom: 20px;
+    }
+    .p1{
+        font-size: large;
+    } 
+    .p2{
+        font-size: large;
+        color:#2C8AA0;
+    }
+    .mainContact__form{
+        background-color:#E6C693;
+    }
+
+}
+/*APLICO MEDIAQUERIES EN CONTACTO PARA VISTA MOBILE*/
+@media(max-width:768px){
+    .gridConteinerContacto{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 500px 50px;
+        gap: 5px;  
+        align-items: center; 
+    }
+    #mainContact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .mainContact__form{
+        width: 80%;
+    }
+}

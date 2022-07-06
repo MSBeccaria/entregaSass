@@ -330,4 +330,75 @@ body #mainAgenda .btn {
     width: 100%;
   }
 }
+
+/* HASTA ACA AGENDA*/
+/*CONTACTO*/
+body .gridConteinerContacto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: 200px 700px 50px;
+      grid-template-rows: 200px 700px 50px;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #mainContact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  padding-left: 90px;
+  padding-right: 90px;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+body .p1 {
+  font-size: large;
+}
+
+body .p2 {
+  font-size: large;
+  color: #2C8AA0;
+}
+
+body .mainContact__form {
+  background-color: #E6C693;
+}
+
+/*APLICO MEDIAQUERIES EN CONTACTO PARA VISTA MOBILE*/
+@media (max-width: 768px) {
+  .gridConteinerContacto {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "main" "footer";
+    -ms-grid-rows: 200px 500px 50px;
+        grid-template-rows: 200px 500px 50px;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #mainContact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainContact__form {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
