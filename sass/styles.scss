@@ -5,6 +5,38 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+body{
+    header{
+        nav{
+            .bg-color-propio{
+                background-color:white;
+            }
+            .nav-item a{
+                font-size:xx-large;
+                color:black;
+            }
+            .navbar-nav .nav-item a:hover{
+                color:#2C8AA0;
+                font-weight: bold;
+            }
+        }
+      }
+      #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#CE5C16;
+        height: 80px;
+        margin-top: 10px;
+        width: 100%;
+       }
+    
+     a {
+        margin-left: 10px;
+        margin-right: 10px;
+        }  
+}  
+
 
 body{
   .gridConteinerIndex{
@@ -16,21 +48,7 @@ body{
     gap: 5px;  
     align-items: center;
   }
-   header{
-    nav{
-        .bg-color-propio{
-            background-color:white;
-        }
-        .nav-item a{
-            font-size:xx-large;
-            color:black;
-        }
-        .navbar-nav .nav-item a:hover{
-            color:#2C8AA0;
-            font-weight: bold;
-        }
-    }
-  }
+   
 
 
 .MainInicio{
@@ -56,22 +74,8 @@ body{
     }
   }
  }
-
- #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#CE5C16;
-    height: 80px;
-    margin-top: 10px;
-    width: 100%;
-   }
-
-   a {
-    margin-left: 10px;
-    margin-right: 10px;
-    }
 }
+
 /* APLICO MEDIAQUERIE EN INDEX PARA VISTA MOBILE*/
 @media(max-width:768px){
     .MainInicio{
@@ -89,6 +93,7 @@ body{
     }
 }
 /* HASTA ACÁ INDEX*/
+
 /*PAGINA NOSOTRAS*/
 
 body{
@@ -100,21 +105,6 @@ body{
     grid-template-rows: 200px 1080px 50px;
     gap: 5px;  
     align-items: center; 
-  }
- header{
-    nav{
-        .bg-color-propio{
-            background-color:white;
-        }
-        .nav-item a{
-            font-size:xx-large;
-            color:black;
-        }
-        .navbar-nav .nav-item a:hover{
-            color:#2C8AA0;
-            font-weight: bold;
-        }
-    }
   }
   #mainNosotras{
     display:grid;
@@ -151,6 +141,7 @@ body{
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
+            justify-items: center;
         }
     
         .mainNosotras__foto1,
@@ -161,3 +152,118 @@ body{
 
 }    
 
+/* HASTA ACÁ NOSOTRAS*/
+
+/*PAGINA MUSICA*/
+
+body{
+    .gridConteinerMusica{
+        display:grid;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
+    grid-template-rows: 200px 800px 50px;
+    gap: 5px;  
+    align-items: center;
+    }
+    #mainMusica{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+    h1{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+/*APLICO MEDIAQUERIES EN MUSICA PARA VISTA MOBILE*/
+@media(max-width:768px){
+   
+    .gridConteinerMusica{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 800px 50px;
+        gap: 5px;  
+        align-items: center;
+        padding-left: 5px; 
+        padding-right: 5px;
+    }
+    #mainMusica{
+        width: 100%;
+    }
+} 
+
+/* HASTA ACA MUSICA*/
+
+/*AGENDA*/
+
+body{
+    .gridConteinerAgenda{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 700px 50px;
+        gap: 5px;  
+        align-items: center; 
+    }
+    #mainAgenda{
+        padding-left: 90px;
+        padding-right: 90px;
+        h1{
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .mainAgenda__cartelera{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:3fr 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+            .carteleraItem{
+            width: 300px;
+            }
+              .btn{
+                width: 200px;
+            }    
+        }
+}
+
+/*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/
+
+@media(max-width:768px){
+
+    .gridConteinerAgenda{
+        display:grid;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+        grid-template-rows: 200px 1300px 50px;
+        gap: 5px;  
+        align-items: center; 
+    
+    .mainAgenda__cartelera{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        }
+        .carteleraItem{
+            width: 100%;
+        }
+    }
+}  
