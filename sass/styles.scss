@@ -123,7 +123,20 @@ body{
   .mainNosotras__foto2:hover{
     filter: grayscale(100%);
  }
-}
+ /*MAPS*/
+ $voces :(
+    sopra:orange,
+    mezzo: darkblue,
+    contra: chocolate,
+ );
+ @each $cuerda, $valor in $voces {
+    .voz-#{$cuerda}{
+        color: $valor;
+    }
+ }
+    
+ }
+
 
 /* APLICO MEDIAQUERIE EN SOBRE NOSOTRAS PARA VISTA MOBILE*/
 

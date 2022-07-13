@@ -122,6 +122,10 @@ body .MainInicio p {
 
 /* HASTA ACÁ INDEX*/
 /*PAGINA NOSOTRAS*/
+body {
+  /*MAPS*/
+}
+
 body .gridConteinerNosotras {
   display: -ms-grid;
   display: grid;
@@ -156,6 +160,18 @@ body .mainNosotras__foto1,
 body .mainNosotras__foto2:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+body .voz-sopra {
+  color: orange;
+}
+
+body .voz-mezzo {
+  color: darkblue;
+}
+
+body .voz-contra {
+  color: chocolate;
 }
 
 /* APLICO MEDIAQUERIE EN SOBRE NOSOTRAS PARA VISTA MOBILE*/
@@ -295,7 +311,7 @@ body #mainAgenda .carteleraItem {
   border-radius: 25px;
   text-decoration: none;
   font-family: sans-serif;
-  background: tomato;
+  background: orangered;
 }
 
 .btn__dic {
@@ -315,7 +331,7 @@ body #mainAgenda .carteleraItem {
   border-radius: 25px;
   text-decoration: none;
   font-family: sans-serif;
-  background: greenyellow;
+  background: chocolate;
 }
 
 /*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/
