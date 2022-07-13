@@ -288,24 +288,34 @@ body #mainAgenda .carteleraItem {
 }
 
 /*extend*/
-.btn, .btn__oct, .btn__dic {
-  width: 200px;
-  height: 50px;
-  background-color: white;
-  text-align: center;
-  color: black;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-
 .btn__oct {
-  background-color: #5c0080;
-  color: whitesmoke;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: tomato;
 }
 
 .btn__dic {
-  background-color: #2454d6;
-  color: whitesmoke;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: skyblue;
+}
+
+.btn__ene {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: greenyellow;
 }
 
 /*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/

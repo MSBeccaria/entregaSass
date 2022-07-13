@@ -238,26 +238,25 @@ body{
 
 /*extend*/
 
-.btn{
-    width:200px;
-    height:50px;
-    background-color:white;
-    text-align:center;
-    color:black;
-    border-radius:25px;
-    border:1px solid black;
-
+@mixin btn {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
 }
-.btn__oct{
-    @extend .btn;
-    background-color:rgb(92, 0, 128);
-    color:whitesmoke;
+.btn__oct {
+    @include btn;
+    background: orangered;
 }
-
-.btn__dic{
-    @extend .btn;
-    background-color:rgb(36, 84, 214);
-    color:whitesmoke;
+.btn__dic {
+    @include btn;
+    background: skyblue;
+}
+.btn__ene {
+    @include btn;
+    background:chocolate;
 }
 
 
