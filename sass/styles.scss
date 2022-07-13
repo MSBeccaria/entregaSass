@@ -242,16 +242,21 @@ body{
             padding-left: 50px;
             padding-right: 50px;
         }
-            .carteleraItem{
-            width: 300px;
-            }
+            /*MIXIN*/
+        @mixin sizes($width $height) {
+            width:$width;
+            height:$height,
+        }    
+        .carteleraItem{
+            @include sizes(300px, auto);
+        }
     
         }
 }
 
 /*extend*/
 
-@mixin btn {
+.btn{
     display: inline-block;
     padding: 10px;
     border: 2px solid black;
@@ -259,17 +264,20 @@ body{
     text-decoration: none;
     font-family: sans-serif;
 }
-.btn__oct {
-    @include btn;
+.btn-oct{
+    @extend .btn;
     background: orangered;
+    color: black;
 }
-.btn__dic {
-    @include btn;
+.btn-dic{
+    @extend .btn;
     background: skyblue;
+    color: black;
 }
-.btn__ene {
-    @include btn;
+.btn-ene{
+    @extend .btn;
     background:chocolate;
+    color: black;
 }
 
 

@@ -45,7 +45,9 @@ body a {
 body .gridConteinerIndex {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   -ms-grid-rows: 200px 1000px 50px;
       grid-template-rows: 200px 1000px 50px;
   gap: 5px;
@@ -129,7 +131,9 @@ body {
 body .gridConteinerNosotras {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   -ms-grid-rows: 200px 1080px 50px;
       grid-template-rows: 200px 1080px 50px;
   gap: 5px;
@@ -179,7 +183,9 @@ body .voz-contra {
   .gridConteinerNosotras {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
     -ms-grid-rows: 200px 1200px 50px;
         grid-template-rows: 200px 1200px 50px;
     gap: 5px;
@@ -213,7 +219,9 @@ body .voz-contra {
 body .gridConteinerMusica {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   -ms-grid-rows: 200px 800px 50px;
       grid-template-rows: 200px 800px 50px;
   gap: 5px;
@@ -247,7 +255,9 @@ body h1 {
   .gridConteinerMusica {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
     -ms-grid-rows: 200px 800px 50px;
         grid-template-rows: 200px 800px 50px;
     gap: 5px;
@@ -267,7 +277,9 @@ body h1 {
 body .gridConteinerAgenda {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   -ms-grid-rows: 200px 700px 50px;
       grid-template-rows: 200px 700px 50px;
   gap: 5px;
@@ -304,34 +316,28 @@ body #mainAgenda .carteleraItem {
 }
 
 /*extend*/
-.btn__oct {
+.btn, .btn-oct, .btn-dic, .btn-ene {
   display: inline-block;
   padding: 10px;
   border: 2px solid black;
   border-radius: 25px;
   text-decoration: none;
   font-family: sans-serif;
+}
+
+.btn-oct {
   background: orangered;
+  color: black;
 }
 
-.btn__dic {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-family: sans-serif;
+.btn-dic {
   background: skyblue;
+  color: black;
 }
 
-.btn__ene {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-family: sans-serif;
+.btn-ene {
   background: chocolate;
+  color: black;
 }
 
 /*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/
@@ -339,7 +345,9 @@ body #mainAgenda .carteleraItem {
   .gridConteinerAgenda {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
     -ms-grid-rows: 200px 2000px 50px;
         grid-template-rows: 200px 2000px 50px;
     row-gap: 5px;
@@ -380,7 +388,9 @@ body #mainAgenda .carteleraItem {
 body .gridConteinerContacto {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   -ms-grid-rows: 200px 700px 50px;
       grid-template-rows: 200px 700px 50px;
   gap: 5px;
@@ -422,7 +432,9 @@ body .mainContact__form {
   .gridConteinerContacto {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
     -ms-grid-rows: 200px 800px 50px;
         grid-template-rows: 200px 800px 50px;
     gap: 5px;
