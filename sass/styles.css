@@ -287,8 +287,25 @@ body #mainAgenda .carteleraItem {
   width: 300px;
 }
 
-body #mainAgenda .btn {
+/*extend*/
+.btn, .btn__oct, .btn__dic {
   width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.btn__oct {
+  background-color: #5c0080;
+  color: whitesmoke;
+}
+
+.btn__dic {
+  background-color: #2454d6;
+  color: whitesmoke;
 }
 
 /*APLICO MEDIAQUERIES EN AGENDA PARA VISTA MOBILE*/
